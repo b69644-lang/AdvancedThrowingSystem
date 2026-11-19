@@ -1,0 +1,19 @@
+Проверка загруженной библиотеки
+
+Файл ScriptHookRDRNetAPI.dll:
+- размер: 1 428 480 байт
+- формат: PE32+ x86-64
+- распознан как .NET/Mono assembly
+- в бинарнике присутствуют строки и типы, характерные для RDR2 API
+
+Сверка с XML-документацией:
+Подтверждены: Game.Player, Player.Character, World.GetAllPeds,
+World.GetAllObjects, Entity.IsAnimal, Entity.IsObject, Entity.AttachTo,
+Entity.Detach, Entity.Velocity, Entity.Health, Entity.RequestOwnership,
+Entity.Exists, Entity.Speed, GameplayCamera.Direction, Game.Joaat,
+Script.Tick, Script.KeyDown.
+
+Важно:
+Среда здесь не содержит компилятора .NET/MSBuild, поэтому DLL мода не была
+собрана и не заявляется как протестированная. Проект обновлён по API-документации,
+но окончательная проверка типов/сигнатур должна пройти при сборке в Visual Studio.
