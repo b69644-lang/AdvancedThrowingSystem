@@ -11,7 +11,7 @@
   <ItemGroup>
     <!-- Set RDR2_DIR to the game's root folder before building. -->
     <Reference Include="ScriptHookRDRNetAPI">
-      <HintPath>dependencies\ScriptHookRDRNetAPI.dll</HintPath>
+      <HintPath>ScriptHookRDRNetAPI.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System.Windows.Forms" />
